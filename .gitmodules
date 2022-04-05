@@ -1,0 +1,6 @@
+[submodule "packages/performance.agentsoncloud.com"]
+	path = packages/performance.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/performance.agentsoncloud.com.git
+[submodule "packages/marketing.agentsoncloud.com"]
+	path = packages/marketing.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/marketing.agentsoncloud.com.git
