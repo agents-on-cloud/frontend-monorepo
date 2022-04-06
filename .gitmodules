@@ -1,6 +1,60 @@
+# 1- Clinic
+[submodule "packages/clinic.management.agentsoncloud.com"]
+	path = packages/clinic.management.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/clinic.management.agentsoncloud.com.git
+# 2- Suppliers (N/A)
+[submodule "packages/suppliers.agentsoncloud.com"]
+	path = packages/suppliers.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/suppliers.agentsoncloud.com.git
+# 3- Incidents
+[submodule "packages/incidents.agentsoncloud.com"]
+	path = packages/incidents.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/incidents.agentsoncloud.com.git
+# 4- Performance
 [submodule "packages/performance.agentsoncloud.com"]
 	path = packages/performance.agentsoncloud.com
 	url = git@github.com:agents-on-cloud/performance.agentsoncloud.com.git
+# 5- Facilities
+[submodule "packages/facilities.agentsoncloud.com"]
+	path = packages/facilities.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/facilities.agentsoncloud.com.git
+# 6- Notifications
+[submodule "packages/notifications.agentsoncloud.com"]
+	path = packages/notifications.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/notifications.agentsoncloud.com.git
+# 7- Inventory
+[submodule "packages/inventory.agentsoncloud.com"]
+	path = packages/inventory.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/inventory.agentsoncloud.com.git
+# 8- Consumers
+[submodule "packages/consumers.agentsoncloud.com"]
+	path = packages/consumers.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/consumers.agentsoncloud.com.git
+# 9- Billing
+[submodule "packages/billing.agentsoncloud.com"]
+	path = packages/billing.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/billing.agentsoncloud.com.git
+# 10- Knowledgebase
+[submodule "packages/knowledgebase.agentsoncloud.com"]
+	path = packages/knowledgebase.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/knowledgebase.agentsoncloud.com.git
+# 11- Marketing
 [submodule "packages/marketing.agentsoncloud.com"]
 	path = packages/marketing.agentsoncloud.com
 	url = git@github.com:agents-on-cloud/marketing.agentsoncloud.com.git
+# 12- Appointments (N/A)
+[submodule "packages/appointments.agentsoncloud.com"]
+	path = packages/appointments.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/appointments.agentsoncloud.com.git
+# 13- Tasks
+[submodule "packages/tasks.agentsoncloud.com"]
+	path = packages/tasks.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/tasks.agentsoncloud.com.git
+# 14- Providers
+[submodule "packages/providers.agentsoncloud.com"]
+	path = packages/providers.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/providers.agentsoncloud.com.git
+# 15- Services (Bad Config)
+[submodule "packages/services.agentsoncloud.com"]
+	path = packages/services.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/services.agentsoncloud.com.git
