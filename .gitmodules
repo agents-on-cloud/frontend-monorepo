@@ -58,3 +58,8 @@
 [submodule "packages/services.agentsoncloud.com"]
 	path = packages/services.agentsoncloud.com
 	url = git@github.com:agents-on-cloud/services.agentsoncloud.com.git
+
+# Layouts
+[submodule "packages/default-layout.agentsoncloud.com"]
+	path = packages/default-layout.agentsoncloud.com
+	url = git@github.com:agents-on-cloud/default-layout.agentsoncloud.com.git
