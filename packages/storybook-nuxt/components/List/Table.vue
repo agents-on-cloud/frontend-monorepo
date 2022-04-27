@@ -6,6 +6,7 @@
     :options.sync="options"
     :server-items-length="itemsCount"
     :loading="loading"
+    :hide-default-footer="hideFooter || false"
     multi-sort
   >
     <template #[`header.reviewerName`]="{ header }">
@@ -17,17 +18,20 @@
     <template #[`item.score`]="{ item }">
       <MetricsStars :value="item.score" />
     </template>
-    <template #[`item.stars`]="{ item }">
-      <MetricsStars :value="item.stars" />
+    <template #[`item.socialScore`]="{ item }">
+      <MetricsStars :value="item.socialScore" />
     </template>
-    <template #[`item.providerType`]="{ item }">
-      <MetricsRoles :value="item.providerType" />
+    <template #[`item.reviewedType`]="{ item }">
+      <MetricsType :value="item.reviewedType" />
     </template>
     <template #[`item.timeUtility`]="{ item }">
       <MetricsTime :value="item.timeUtility" />
     </template>
     <template #[`item.servicesUtility`]="{ item }">
       <MetricsTime :value="item.servicesUtility" />
+    </template>
+    <template #[`item.returningCustomers`]="{ item }">
+      <MetricsNumber :value="item.returningCustomers" />
     </template>
     <template #[`item.responseTime`]="{ item }">
       <MetricsTime :value="item.responseTime" />
@@ -45,14 +49,17 @@
       <MetricsNumber :mini="true" :value="item.bookings" />
     </template>
     <template #[`item.createdAt`]="{ item }">
-      <MetricsCreatedAt :createdAt="item.createdAt" />
+      <MetricsDateTime :value="item.createdAt" />
+    </template>
+    <template #[`item.number_of_reviews`]="{ item }">
+      <MetricsNumber :value="item.number_of_reviews" />
     </template>
   </v-data-table>
 </template>
 
 <script>
 export default {
-  props: ["headers", "items", "itemsCount", "loading"],
+  props: ["headers", "items", "itemsCount", "loading", "hideFooter"],
   data() {
     return { options: {} };
   },
@@ -77,8 +84,8 @@ td {
 </style>
 
 <style>
-th:nth-child(2),
-td:nth-child(2),
+th:nth-child(1),
+td:nth-child(1),
 .fixed {
   padding-right: 20px;
   width: 150px;
@@ -89,12 +96,12 @@ td:nth-child(2),
   border-bottom: thin solid rgba(255, 255, 255, 0.12);
 }
 
-th:nth-child(2),
-td:nth-child(2) {
+th:nth-child(1),
+td:nth-child(1) {
   background-color: #1e1e1e;
 }
 
-tr:hover td:nth-child(2) {
+tr:hover td:nth-child(1) {
   background-color: #616161;
   border-top: thin solid rgba(255, 255, 255, 0.35) !important;
 }

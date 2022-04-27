@@ -1,5 +1,7 @@
 <template>
-  <div class="text-center">{{ value || "-" }}</div>
+  <div class="text-center" style="text-transform: capitalize">
+    {{ value.replace(/.*\./, "") || "-" }}
+  </div>
 </template>
 
 <script>
